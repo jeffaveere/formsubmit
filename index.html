@@ -15,6 +15,10 @@
           action="https://formsubmit.co/faveerejef@gmail.com"
           method="POST"
         >
+          <!--Honeypot-->
+          <input type="text" name="_honey" style="display: ;none" />
+          <!--Disable Captcha-->
+          <input type="hidden" name="_captcha" value="false" />
           <div class="form-group">
             <label for="firstname">firstname</label>
             <input type="text" name="firstname" id="firstname" />
