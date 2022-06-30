@@ -5,30 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <img class="img-banner" src="strip.png" alt="mmtuts banner" />
-    <div class="wrapper">
-      <article class="img-info">
-        <h2 class="h2">yay</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
-          excepturi deserunt, nulla dolor eos nemo est quas natus id et
-          perspiciatis libero dolores voluptatem atque vero provident nesciunt
-          porro mollitia accusamus sunt vitae nostrum? Eveniet a magni
-          reprehenderit culpa unde praesentium, ducimus iure nemo odit officia.
-          Id ducimus maiores nulla <p> officiis voluptas amet voluptate! Mollitia
-          voluptatem, esse voluptates tenetur debitis molestias nihil
-          voluptatibus corporis! Ullam qui veritatis soluta illo eveniet
-          eligendi. Blanditiis delectus voluptatibus reprehenderit commodi harum
-          necessitatibus esse. Consectetur est, debitis itaque sed dolore
-          tenetur fuga adipisci necessitatibus labore minima ratione ipsa
-          nesciunt aperiam hic molestiae sequi? Accusamus, ut.</p>
-        </p>
-      </article>
-      <img class="img-me" src="download.png" alt="">
-    </div>
+    <section>
+      <div class="container">
+        <form
+          class="row g-3"
+          action="https://formsubmit.co/53d06d18838f6fc13ea382d1450a5e30 "
+          method="POST"
+        >
+          <!--Honeypot-->
+          <input type="text" name="_honey" style="display: none" />
+
+          <!--Disable Captcha-->
+          <input
+            type="hidden"
+            name="_captcha"
+            value="false"
+            style="display: none"
+          />
+
+          <div class="form-group">
+            <label for="firstname">firstname</label>
+            <input type="text" name="firstname" id="firstname" />
+          </div>
+          <div class="form-group">
+            <label for="lastname">lastname</label>
+            <input type="text" id="lastname" name="lastname" />
+          </div>
+          <div class="form-group">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" />
+          </div>
+          <div class="form-group">
+            <label for="message">message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+          <button type="submit">submit</button>
+        </form>
+      </div>
+      <div id="status" class="error">succses</div>
+    </section>
   </body>
 </html>
